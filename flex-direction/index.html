@@ -19,31 +19,49 @@
 
 <body>
     <main>
-        <header>
-            <h2>flex-direction</h2>
-        </header>
-        <section class="switcher-container">
-            <div>
-                <h5>Select a flex-direction property</h5>
+        <div class="left-content">
+            <header>
+                <h2>flex-direction</h2>
+            </header>
+            <div class="flex-description">
+                <div class="content-description"
+                    title="Source: https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-direction">
+                    The <code>flex-direction</code> CSS property sets how flex items are placed in the flex container
+                    defining the
+                    main axis and the direction (normal or reversed).
+                </div>
+                <div class="code-snnipet">
+                    <pre><code><span class="selector">.container</span> <span class="bracket">{</span> 
+  <span class="property">flex-direction:</span> <span class="value">row | row-reverse | column | column-reverse;</span> 
+<span class="bracket">}</span></code>
+</pre>
+                </div>
             </div>
-            <div>
-                <select class="form-select" name="switcher" id="switcher">
-                    <option value="row">row</option>
-                    <option value="row-reverse">row-reverse</option>
-                    <option value="column">column</option>
-                    <option value="column-reverse">column-reverse</option>
-                </select>
-            </div>
-        </section>
-        <section class="box-container">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-            <div class="box">4</div>
-            <div class="box">5</div>
-            <div class="box">6</div>
-            <div class="box">7</div>
-        </section>
+        </div>
+        <div class="right-content">
+            <section class="switcher-container">
+                <div>
+                    <h5>Select a flex-direction property</h5>
+                </div>
+                <div>
+                    <select class="form-select" name="switcher" id="switcher">
+                        <option value="row">row</option>
+                        <option value="row-reverse">row-reverse</option>
+                        <option value="column">column</option>
+                        <option value="column-reverse">column-reverse</option>
+                    </select>
+                </div>
+            </section>
+            <section class="box-container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+            </section>
+        </div>
     </main>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

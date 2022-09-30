@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #6F8AB7 !important;
+    background-color: #243B4A !important;
     font-family: 'Montserrat';
     /*#6F8AB7, #ACEDFF, #CAE5FF*/
 }
@@ -14,13 +14,95 @@ main {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-content {
+    width: 30%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #2D4654;
+}
+
+.flex-description {
+    width: 70%;
+    height: 70%;
+    border: 1px solid #87BCDE;
+    border-radius: 10px;
+}
+
+.content-description {
+    color: #fff;
+    padding: 15px;
+    text-align: justify;
+}
+
+.content-description code {
+    color: #87BCDE;
+    background-color: #243B4A;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.code-snnipet {
+    width: 90%;
+    margin-left: 15px;
+    background-color: #243B4A;
+    border-radius: 5px;
+}
+
+pre {
+    white-space: pre;
+    padding: 15px;
+}
+
+pre::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #243B4A;
+}
+
+pre::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ACBEA3;
+}
+
+.selector {
+    color: #A3C4BC;
+}
+
+.bracket {
+    color: #4D9DE0;
+}
+
+.property {
+    color: #5C95FF;
+}
+
+.value {
+    color: #A8B4A5;
+}
+
+.right-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
     height: 20%;
-    color: #fff;
+    color: #87BCDE;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -29,8 +111,9 @@ header {
 section.switcher-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     outline: none;
+    color: #fff;
 }
 
 select.form-select {
@@ -47,13 +130,14 @@ section.box-container {
 }
 
 .box {
-    width: 7rem;
-    height: 7rem;
-    background-color: #fff;
+    width: 5rem;
+    height: 5rem;
+    background-color: #805E73;
     margin: 2px;
     font-size: 20px;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
